@@ -14,6 +14,9 @@ namespace DataLang
         public List<List<Token>> strings = new List<List<Token>>();
 
 
+
+        
+
         public Parser(List<Token> tokList)
         {
             this.tok = tokList;

@@ -43,9 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="langConstruction\Commands.cs" />
     <Compile Include="langConstruction\Errors.cs" />
+    <Compile Include="langConstruction\TypeVariables.cs" />
+    <Compile Include="langConstruction\Variable.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tools\Command.cs" />
     <Compile Include="tools\Lexer.cs" />
     <Compile Include="tools\Parser.cs" />
     <Compile Include="tools\Token.cs" />
