@@ -11,7 +11,7 @@ namespace DataLang
         static void Main(string[] args)
         {
 
-            string code1 = "a = 23\nresult = 45";
+            string code1 = "a = 5 + 23 + 10\nresult = a + 45 + 3";
 
             
             Lexer lex = new Lexer(code1);
@@ -20,15 +20,11 @@ namespace DataLang
 
             pars.CreateStringsManager(pars.tok);
 
-            List<List<Token>> tokens = pars.strings;
+            pars.SetCommands(pars.strings);
 
-            for(int i = 0; i < tokens.Count; i++)
-            {
-                foreach (Token token in tokens[i])
-                {
-                    Console.WriteLine(token.type.name);
-                }
-            }
+            List<List<Command>> com = pars.commands;
+
+            Console.ReadLine();
 
 
 

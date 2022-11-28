@@ -17,8 +17,8 @@ namespace DataLang
             new TokenType("LPAR", "^\\("),
             new TokenType("RPAR", "^\\)"),
             new TokenType("ASSIGN", "^="),
-            new TokenType("PLUS", "^+"),
-            new TokenType("MINUS", "^-"),
+            new TokenType("PLUS", "^\\+"),
+            new TokenType("MINUS", "^\\-"),
             new TokenType("LCURPAR", "^\\{"),
             new TokenType("LCURPAR", "^\\}"),
             new TokenType("LOG", "^log")

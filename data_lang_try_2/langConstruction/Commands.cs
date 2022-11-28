@@ -13,7 +13,11 @@ namespace DataLang
         {
             Initialized,
             Assing,
-            TwoOperation
+            TwoOperation,
+            ConsolePrint,
+            NameMemory,
+            NoneNameMemory,
+            Variable
         }
 
         public enum TypeTwoOperation
@@ -21,7 +25,8 @@ namespace DataLang
             Concat,
             UnConcat,
             Divided,
-            Multiply
+            Multiply,
+            None
         }
 
     }

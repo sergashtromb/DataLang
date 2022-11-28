@@ -11,7 +11,9 @@ namespace DataLang
 
         public enum LangErrors
         {
-            UninitializedVariable
+            UninitializedVariable,
+            InvalidExpression,
+            InvalidOperation
         }
         
 
@@ -21,9 +23,20 @@ namespace DataLang
             {
                 case LangErrors.UninitializedVariable:
                 {
+                    Console.WriteLine($"Error - UninitializedVariable: on string {numSring}");
                     throw new Exception($"Error - UninitializedVariable: on string {numSring}");
+                    
                 }
-
+                case LangErrors.InvalidExpression:
+                    {
+                        Console.WriteLine($"Error - InvalidExpression: on string {numSring}");
+                        throw new Exception($"Error - InvalidExpression: on string {numSring}");
+                    }
+                case LangErrors.InvalidOperation:
+                    {
+                        Console.WriteLine($"Error - InvalidOperation: on string {numSring}");
+                        throw new Exception($"Error - InvalidOperation: on string {numSring}");
+                    }
                 
             
             }
